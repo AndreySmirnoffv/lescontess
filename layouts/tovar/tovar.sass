@@ -1,0 +1,668 @@
+
+// .tovar-page__tovar
+//   display: flex
+//   flex-direction: column
+//   width: 100%
+//   padding: 0 30px 0 30px
+
+// .tovar-page-tovar__container
+//   margin: 0 auto
+//   max-width: 1102px
+//   width: 100%
+
+// .tovar-page__navigation-tovars
+//   display: flex
+//   justify-content: space-between
+//   margin-bottom: 20px
+
+//   a
+//     display: flex
+//     align-items: center
+//     justify-content: center
+//     height: 28px
+//     transition-duration: .2s
+//     border-color: transparent
+//     border-radius: 5px
+
+//   img
+//     width: 25px
+//     height: 25px
+
+// .tovar-page-navigation__prev
+//   rotate: 180deg
+//   &:hover
+//     background-color: wheat
+
+// .tovar-page-navigation__next
+//   &:hover
+//     background-color: wheat
+
+// .tovar-page-navigation__shop
+//   svg path
+//   transition-duration: .2s
+//   &:hover
+//     svg path
+//     fill: #363636
+
+// .tovar-page__info
+//   display: flex
+//   max-width: 1102px
+//   justify-content: end
+
+//   font-family: "Playfair Display"
+//   color: black
+
+// .tovar-page-info-imgs__main
+//   position: relative
+//   max-width: 574px
+//   max-height: 574px
+//   display: flex
+
+// .tovar-page__slider
+//   display: flex
+//   overflow: hidden
+//   justify-content: start
+//   max-width: 574px
+
+//   input
+//     display: none
+
+//   img
+//     width: 100%
+
+// .tovar-page__slide
+//   min-width: 100%
+//   transition-duration: .5s
+
+// .tovar-page-info__navigation
+//   display: flex
+
+//   label
+//     min-width: 143px
+//     max-width: 143px
+//     min-height: 143px
+//     max-height: 143px
+//     cursor: pointer
+//     overflow: hidden
+
+//     img
+//       width: 100%
+
+//   #r1:checked ~ .tovar-page__s1
+//     margin-left: 0
+
+//   #r2:checked ~ .tovar-page__s1
+//     margin-left: -100%
+
+//   #r3:checked ~ .tovar-page__s1
+//     margin-left: -200%
+
+// .tovar-page-info-imgs-main__doscount
+//   position: absolute
+//   display: inline-flex
+//   background-color: black
+//   padding: 3px 8px
+//   border-color: transparent
+//   border-radius: 3px
+
+//   font-size: 12px
+//   color: white
+
+// .tovar-page-info-content__name
+//   font-size: 35px
+//   line-height: 40px
+//   margin-bottom: 15px
+
+// .tovar-page-info-content__bonuse
+//   max-width: 374px
+//   margin-bottom: 15px
+
+//   font-weight: 700
+//   white-space: normal
+
+// .tovar-page-info-content__description
+//   max-width: 374px
+//   margin-bottom: 15px
+
+//   font-size: 14px
+//   color: #a2a0a0
+
+// .tovar-page-info-content__price
+//   display: flex
+//   justify-content: center
+//   margin-bottom: 15px
+
+//   color: black
+//   font-size: 28px
+//   font-weight: 700
+
+// .tovar-page-info-content__price-prev
+//   margin-right: 15px
+
+//   font-size: 25px
+//   color: #a2a0a0
+//   font-weight: 500
+//   text-decoration: line-through
+
+// .tovar-page-info-content__price-currency
+//   margin-left: 5px
+
+//   font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif
+
+// .in-stock
+//   color: #77a464
+//   font-size: 13px
+//   margin-bottom: 15px
+
+// .tovar-page__adding-to-cart
+//   margin: 30px 0 30px 0
+//   display: flex
+//   align-items: center
+//   justify-content: center
+
+// .tovar-page__quantity
+//   display: inline-flex
+//   padding: 12px 10px
+//   border: 1px solid #a2a0a0
+//   background-color: white
+
+//   button
+//     width: 28px
+//     height: 28px
+//     cursor: pointer
+//     display: flex
+//     align-items: center
+//     justify-content: center
+//     transition-duration: .2s
+//     border-color: transparent
+//     border-radius: 2px
+
+//     background-color: transparent
+//     border-color: transparent
+//     font-family: Roboto
+//     font-size: 20px
+
+//     &:hover
+//       background-color: rgba(162, 160, 160, 0.09)
+
+//   input
+//     max-width: 50px
+//     border-color: transparent
+//     background-color: transparent
+
+//     font-family: Roboto
+//     text-align: center
+//     font-size: 16px
+//     color: #a2a0a0
+
+// .tovar-page-quantity__decrement
+//   position: relative
+//   padding-top: 3px
+
+//   &::before
+//     content: ""
+//     width: 10px
+//     background-color: black
+//     height: 2px
+//     border-color: transparent
+//     border-radius: 1px
+
+// .tovar-page-quantity__increment
+//   position: relative
+
+//   &::before, &::after
+//     position: absolute
+//     content: ""
+//     background-color: black
+//     top: 50%
+//     left: 50%
+//     translate: -50% -50%
+//     border-color: transparent
+//     border-radius: 2px
+
+//   &::before
+//     width: 10px
+//     height: 2px
+
+//   &::after
+//     width: 2px
+//     height: 10px
+
+// .tovar-page-quantity__add
+//   background-color: white
+//   padding: 15px 80px
+//   border: 2px solid black
+//   border-radius: 3px
+//   margin-left: 10px
+//   transition-duration: .2s
+//   cursor: pointer
+
+//   font-family: "Playfair Display"
+//   font-size: 15px
+//   color: black
+
+//   &:hover
+//     background-color: black
+//     color: white
+
+// .tovar-page__category
+//   margin-bottom: 15px
+
+//   color: #a2a0a0
+//   font-size: 14px
+
+//   a:hover
+//     text-decoration: underline
+
+// .tovar-page__articul
+//   display: inline-flex
+//   align-items: center
+//   padding: 3px 10px
+//   border: 1px solid #cbc9c9
+//   border-radius: 5px
+
+//   color: #626262
+//   font-family: "Playfair Display"
+//   font-size: 13px
+
+// .tab
+//     cursor: pointer
+//     text-decoration: none
+//     color: #000
+//     margin-right: 10px
+//     margin-bottom: 10px
+
+// .active-tab
+//     position: relative
+
+//     &::before
+//         content: ""
+//         position: absolute
+//         bottom: -2px
+//         height: 3px
+//         left: 50%
+//         transform: translateX(-50%)
+//         width: 120%
+//         background-color: #636363
+
+// .info-block-header
+//     font-size: 15px
+//     font-weight: bold
+//     text-align: left
+//     margin-top: 50px
+// .info-block,
+// .volume-block
+//     margin-top: 50px
+//     width: 90%
+//     text-align: left
+
+// .wrapper-text__first-block, .wrapper-text__second-block
+//   margin-top: 50px
+//   border-top: 1px solid #636363
+//   text-align: left
+//   margin: 100px auto
+//   width: 80%
+
+// .wrapper-text-first-block__bottom-text
+//   margin-top: 30px
+
+// .tovars
+
+// .tovars__blocks
+//   display: flex
+//   margin-left: 20%
+// .tovars__header
+//   text-align: left
+//   margin-left: 10%
+// .tovars__first-block, .tovars__second-block, .tovars__third-block
+//   margin-top: 10%
+// .tovars-first-block__image, .tovars-second-block__image, .tovars-third-block__image
+//   margin-right: 100%
+//   display: inline
+//   height: 344px
+//   width: 344px
+
+.tovar-page__tovar
+  display: flex
+  flex-direction: column
+  width: 100%
+  padding: 0 30px 0 30px
+
+.tovar-page-tovar__container
+  margin: 0 auto
+  max-width: 1102px
+  width: 100%
+
+.tovar-page__navigation-tovars
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 28px
+    transition-duration: .2s
+    border-color: transparent
+    border-radius: 5px
+
+  img
+    width: 25px
+    height: 25px
+
+.tovar-page-navigation__prev
+  rotate: 180deg
+  &:hover
+    background-color: wheat
+
+.tovar-page-navigation__next
+  &:hover
+    background-color: wheat
+
+.tovar-page-navigation__shop
+  svg path
+  transition-duration: .2s
+  &:hover
+    svg path
+    fill: #363636
+
+.tovar-page__info
+  display: flex
+  max-width: 1102px
+  justify-content: end
+
+  font-family: "Playfair Display"
+  color: black
+
+.tovar-page-info-imgs__main
+  position: relative
+  max-width: 574px
+  max-height: 574px
+  display: flex
+
+.tovar-page__slider
+  display: flex
+  overflow: hidden
+  justify-content: start
+  max-width: 574px
+
+  input
+    display: none
+
+  img
+    width: 100%
+
+.tovar-page__slide
+  min-width: 100%
+  transition-duration: .5s
+
+.tovar-page-info__navigation
+  display: flex
+
+  label
+    min-width: 143px
+    max-width: 143px
+    min-height: 143px
+    max-height: 143px
+    cursor: pointer
+    overflow: hidden
+
+    img
+      width: 100%
+
+  #r1:checked ~ .tovar-page__s1
+    margin-left: 0
+
+  #r2:checked ~ .tovar-page__s1
+    margin-left: -100%
+
+  #r3:checked ~ .tovar-page__s1
+    margin-left: -200%
+
+.tovar-page-info-imgs-main__doscount
+  position: absolute
+  display: inline-flex
+  background-color: black
+  padding: 3px 8px
+  border-color: transparent
+  border-radius: 3px
+
+  font-size: 12px
+  color: white
+
+.tovar-page-info-content__name
+  font-size: 35px
+  line-height: 40px
+  margin-bottom: 15px
+
+.tovar-page-info-content__bonuse
+  max-width: 374px
+  margin-bottom: 15px
+
+  font-weight: 700
+  white-space: normal
+
+.tovar-page-info-content__description
+  max-width: 374px
+  margin-bottom: 15px
+
+  font-size: 14px
+  color: #a2a0a0
+
+.tovar-page-info-content__price
+  display: flex
+  justify-content: center
+  margin-bottom: 15px
+
+  color: black
+  font-size: 28px
+  font-weight: 700
+
+.tovar-page-info-content__price-prev
+  margin-right: 15px
+
+  font-size: 25px
+  color: #a2a0a0
+  font-weight: 500
+  text-decoration: line-through
+
+.tovar-page-info-content__price-currency
+  margin-left: 5px
+
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif
+
+.in-stock
+  color: #77a464
+  font-size: 13px
+  margin-bottom: 15px
+
+.tovar-page__adding-to-cart
+  margin: 30px 0 30px 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.tovar-page__quantity
+  display: inline-flex
+  padding: 12px 10px
+  border: 1px solid #a2a0a0
+  background-color: white
+
+  button
+    width: 28px
+    height: 28px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    transition-duration: .2s
+    border-color: transparent
+    border-radius: 2px
+
+    background-color: transparent
+    border-color: transparent
+    font-family: Roboto
+    font-size: 20px
+
+    &:hover
+      background-color: rgba(162, 160, 160, 0.09)
+
+  input
+    max-width: 50px
+    border-color: transparent
+    background-color: transparent
+
+    font-family: Roboto
+    text-align: center
+    font-size: 16px
+    color: #a2a0a0
+
+.tovar-page-quantity__decrement
+  position: relative
+  padding-top: 3px
+
+  &::before
+    content: ""
+    width: 10px
+    background-color: black
+    height: 2px
+    border-color: transparent
+    border-radius: 1px
+
+.tovar-page-quantity__increment
+  position: relative
+
+  &::before, &::after
+    position: absolute
+    content: ""
+    background-color: black
+    top: 50%
+    left: 50%
+    translate: -50% -50%
+    border-color: transparent
+    border-radius: 2px
+
+  &::before
+    width: 10px
+    height: 2px
+
+  &::after
+    width: 2px
+    height: 10px
+
+.tovar-page-quantity__add
+  background-color: white
+  padding: 15px 80px
+  border: 2px solid black
+  border-radius: 3px
+  margin-left: 10px
+  transition-duration: .2s
+  cursor: pointer
+
+  font-family: "Playfair Display"
+  font-size: 15px
+  color: black
+
+  &:hover
+    background-color: black
+    color: white
+
+.tovar-page__category
+  margin-bottom: 15px
+
+  color: #a2a0a0
+  font-size: 14px
+
+  a:hover
+    text-decoration: underline
+
+.tovar-page__articul
+  display: inline-flex
+  align-items: center
+  padding: 3px 10px
+  border: 1px solid #cbc9c9
+  border-radius: 5px
+
+  color: #626262
+  font-family: "Playfair Display"
+  font-size: 13px
+
+.tab
+  cursor: pointer
+  text-decoration: none
+  color: #000
+  margin-right: 10px
+  margin-bottom: 10px
+
+.active-tab
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    bottom: -2px
+    height: 3px
+    left: 50%
+    transform: translateX(-50%)
+    width: 120%
+    background-color: #636363
+
+.info-block-header
+  font-size: 15px
+  font-weight: bold
+  text-align: left
+  margin-top: 50px
+.info-block,
+.volume-block
+  margin-top: 50px
+  width: 90%
+  text-align: left
+
+.wrapper-text__first-block, .wrapper-text__second-block
+  margin-top: 50px
+  border-top: 1px solid #636363
+  text-align: left
+  margin: 100px auto
+  width: 80%
+
+.wrapper-text-first-block__bottom-text
+  margin-top: 30px
+
+.tovars
+
+.tovars__blocks
+  display: flex
+  margin-left: 20%
+
+.tovars__header
+  text-align: left
+  margin-left: 10%
+
+.tovars__first-block, .tovars__second-block, .tovars__third-block
+  margin-top: 10%
+
+.tovars-first-block__image, .tovars-second-block__image, .tovars-third-block__image
+  margin-right: 100%
+  display: inline
+  height: 344px
+  width: 344px
+
+.tovars-first-block__info, .tovars-second-block__info, .tovars-third-block__info
+  margin-top: 10px
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+
+.tovars-first-block__prev-price, .tovars-second-block__prev-price, .tovars-third-block__prev-price
+  margin-left: 10px
+  font-size: 10px
+  color: #636363
+  text-decoration: line-through
+  margin-top: 1%
+
+.tovars-first-block__price, .tovars-second-block__price, .tovars-third-block__price
+  margin-left: 10px
+  font-size: 15px
+  font-weight: bold

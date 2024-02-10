@@ -1,0 +1,84 @@
+// products-slider.sass
+
+.product-slider
+    display: flex
+    overflow: hidden
+    max-width: 80%
+    margin: auto
+    position: relative
+    justify-content: center
+    align-items: center
+
+.slides-container
+    margin-top: 100px
+    display: flex
+    transition: transform 0.5s ease-in-out
+
+.slide
+  position: relative
+  width: 33.33%
+  overflow: hidden
+  opacity: 0.8
+  text-decoration: none
+  object-fit: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  transition: transform 0.5s ease-in-out
+
+  img
+    object-fit: cover
+    height: 250px
+    width: 100%
+
+  .discount-text
+    position: absolute
+    top: 10px
+    left: 10px
+    background-color: black
+    color: white
+    padding: 5px
+    border-radius: 5px
+
+  .info-container
+    padding: 10px
+    text-align: center
+
+  .name-text
+    font-weight: bold
+
+  .prices-container
+    margin-top: 5px
+    display: flex
+    flex-direction: row
+
+    .prev-price-text
+      font-size: 15px
+      color: grey
+      text-decoration: line-through
+      margin-bottom: 5px
+
+    .price-text
+      font-size: 17px
+      margin-left: 5px
+
+.prev-button, .next-button
+  color: black
+  padding: 10px
+  border: none
+  cursor: pointer
+  position: absolute
+  top: 50%
+  border-radius: 5px
+  z-index: 1
+
+.prev-button
+  left: 10px
+
+.next-button
+  right: 10px
+
+  &:hover
+    color: black
+
