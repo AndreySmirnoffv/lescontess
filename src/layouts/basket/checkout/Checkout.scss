@@ -1,0 +1,91 @@
+.checkout-page__container {
+    width: 100%;
+    max-width: 1079px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout-page-container__coup {
+    margin-top: 100px;
+    padding: 15px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 6px;
+  
+    & > p {
+      font-family: "Playfair Display";
+      color: #626262;
+      font-size: 14px;
+  
+      span {
+        margin-left: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .checkout-page-container__write-coup {
+    height: 0;
+    transition-duration: .2s;
+    margin-top: 15px;
+    background: rgba(0,0,0,.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+    &-active {
+      height: 209px;
+      padding: 30px;
+    }
+  }
+  .checkout-page-container-write__title {
+    margin-bottom: 15px;
+  
+    font-family: "Playfair Display";
+    font-size: 15px;
+    color: #626262;
+  }
+  .checkout-page__content {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+  
+    font-family: "Playfair Display";
+  }
+  .checkout-page__payment-details {
+    width: 50%;
+    border: 1px solid black;
+  }
+  .checkout-page__payment-title {
+    margin: 0;
+  
+    text-align: left;
+    font-size: 40px;
+  
+    line-height: 48px;
+  
+    font-weight: 400;
+  
+    letter-spacing: 0px;
+  }
+  
+  .checkout-page__form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  
+    * {
+      width: 100%;
+    }
+  }
+  
+  .checkout-page__person-info {
+    display: flex;
+    gap: 20px;
+  }

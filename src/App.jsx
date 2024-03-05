@@ -12,11 +12,11 @@ import Tovar from "./layouts/tovar/Tovar";
 import { Basket } from "./layouts/basket/Basket";
 import Checkout from "./layouts/basket/checkout/Checkout";
 import Footer from "./layouts/footer/Footer";
-import React, {useState} from "react";
-import { CheckoutForm } from "./layouts/basket/checkout/checkout-form/CheckoutForm";
+import React from "react";
+import WrappedCheckoutForm from "./layouts/basket/checkout/checkout-form/WrappedCheckoutForm";
+
 
 const App = () => {
-  const [showItem, setShowItem] = useState(false)
   return (
     <BrowserRouter>
       <div className="App">
@@ -30,7 +30,8 @@ const App = () => {
           <Route path="/about-us" element={<About />} />
           <Route path="shop/:path" element={<Tovar />} />
           <Route path="korb" element={<Basket />} />
-            <Route path="checkout" element={showItem ? <CheckoutForm/> : <><h3>10.00</h3><button onClick={() => setShowItem(true)}>purchase</button></>} />
+          <Route path="checkout" element={<Checkout/>} />
+          <Route path="payment" element={<WrappedCheckoutForm/>}/>
         </Routes>
         <Footer />
       </div>

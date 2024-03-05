@@ -125,7 +125,7 @@ export const Basket = () => {
                   <p>Итог</p>
                   <p className='basket-page-amount-result__price'>{lastPrice.toLocaleString('de-DE')} ₽</p>
                 </div>
-                <Link to={'/checkout'} className='basket-page-amount__checkout'>Оформить заказ</Link>
+                <Link to={'/payment'} className='basket-page-amount__checkout'>Оформить заказ</Link>
                 <Link to={'/shop'} className='basket-page-amount__continue'>Продолжить покупки</Link>
               </article>
             </div>

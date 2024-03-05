@@ -6,7 +6,7 @@ import {CheckoutForm} from "./checkout-form/CheckoutForm";
 import TopPath from "../../top-path/TopPath";
 import { Steps } from "../steps/Steps";
 import { Details } from "./details/Details";
-import "./Checkout.sass";
+import "./Checkout.scss";
 
 const stripePromise = loadStripe("pk_live_51O0AFHIPurxpWPx3EJ4DZtJvnLe0Zag2inN7nTFzB4maLGzhEPqzQIuRb0aCZvXomPl6JR8kOLzLJYtldArLNpJh00Ce2F6eP1");
 

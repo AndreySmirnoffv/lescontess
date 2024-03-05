@@ -20,3 +20,4 @@ export const Steps = ({ steps }) => {
     </ul>
   )
 }
+

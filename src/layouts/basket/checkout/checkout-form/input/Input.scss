@@ -1,0 +1,20 @@
+.input-default-style {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #999999;
+    background-color: rgba(255,255,255,1);
+    margin-bottom: 15px;
+
+    font-family: "Playfair Display";
+    font-size: 15px;
+    color: #626262;
+}
+
+.input-content__placeholder {
+    padding-bottom: 5px;
+
+    color: #626262;
+    font-size: 14px;
+    text-align: left;
+}

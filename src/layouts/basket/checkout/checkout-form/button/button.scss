@@ -1,0 +1,19 @@
+.button-default-style {
+    width: 100%;    
+    padding: 10px 0;
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    max-width: 424px;
+    transition-duration: .2s;
+    cursor: pointer;
+
+    font-family: "Playfair Display";
+    font-size: 15px;
+    color: #000000;
+
+    &:hover {
+        background: #000000;
+        color: white;
+    }
+}
