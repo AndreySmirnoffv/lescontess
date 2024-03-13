@@ -223,7 +223,6 @@ const TovarContainer = ({ currentItem }) => {
                 alt=""
               />
             </Link>
-
             <p className="tovars-first-block__name">
               Парфюмерная вода {randomAromaInfo1.name}
             </p>
