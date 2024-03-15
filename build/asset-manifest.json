@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13d4ff1d.css",
+    "main.js": "/static/js/main.daa877de.js",
+    "static/js/808.96f33c69.chunk.js": "/static/js/808.96f33c69.chunk.js",
+    "static/media/seventh-image.png": "/static/media/seventh-image.14f59c0186e51e5f6035.png",
+    "static/media/fifth-image.png": "/static/media/fifth-image.7fd7d12f8b046553675d.png",
+    "static/media/second-img.png": "/static/media/second-img.bb2f42de1be85b939e41.png",
+    "static/media/first-img.png": "/static/media/first-img.1d25161ab85943403503.png",
+    "static/media/second-image.png": "/static/media/second-image.b83aedeeb9af11f38f37.png",
+    "static/media/first-image.png": "/static/media/first-image.6be53f54d72cc677c5fd.png",
+    "static/media/twelfth-image.png": "/static/media/twelfth-image.2f492270e488dc9801ca.png",
+    "static/media/ninth-image.png": "/static/media/ninth-image.010ab03dbac4dc47f71b.png",
+    "static/media/tenth-image.png": "/static/media/tenth-image.8488e5eee79c59beb108.png",
+    "static/media/about-image.png": "/static/media/about-image.d08401b0f898d30f8796.png",
+    "static/media/eleventh-image.png": "/static/media/eleventh-image.7518e1104ca43220f8f8.png",
+    "static/media/fourth-image.png": "/static/media/fourth-image.d34a31aa9ca11eeb7b52.png",
+    "static/media/eights-image.png": "/static/media/eights-image.4bbabc89df51b1a99165.png",
+    "static/media/third-image.png": "/static/media/third-image.7aaf9f24ec382865b064.png",
+    "static/media/sixth-image.png": "/static/media/sixth-image.7604c6a907c9b7c2f7cf.png",
+    "static/media/aroma-img.png": "/static/media/aroma-img.b6ba037c37aa55103907.png",
+    "static/media/katch.png": "/static/media/katch.6bd9efead394a2eb33bd.png",
+    "static/media/seventh-image.jpeg": "/static/media/seventh-image.ee26b268be42be84c238.jpeg",
+    "static/media/logo.png": "/static/media/logo.bc9bf9b28f6f3c63a752.png",
+    "static/media/ok-contacts.svg": "/static/media/ok-contacts.a0601485be25f4249ded1e9f30dec855.svg",
+    "static/media/vk-contact.svg": "/static/media/vk-contact.2b18f1c7bb1c159c2082e62857c962b6.svg",
+    "index.html": "/index.html",
+    "main.13d4ff1d.css.map": "/static/css/main.13d4ff1d.css.map",
+    "main.daa877de.js.map": "/static/js/main.daa877de.js.map",
+    "808.96f33c69.chunk.js.map": "/static/js/808.96f33c69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13d4ff1d.css",
+    "static/js/main.daa877de.js"
+  ]
+}
