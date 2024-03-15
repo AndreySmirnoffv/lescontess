@@ -1,4 +1,4 @@
-const PaymentsApi = require('./index.js')
+const PaymentsApi = require('../index.js')
 
 const configureRoutes = app => {
     PaymentsApi(app)

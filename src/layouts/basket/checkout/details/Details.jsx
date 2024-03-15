@@ -47,7 +47,6 @@ export const Details = () => {
       amount: this.amount, //возьми из redux
       token: token,
     };
-
     axios
       .post("http://localhost:8000/checkout", body)
       .then(response => {

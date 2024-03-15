@@ -29,7 +29,7 @@ pool.query(`
 
 app.use(express.json());
 
-app.post('/api/data', (req, res) => {
+app.post('/checkout/', (req, res) => {
     const { name, lastName, country, city, region, postalCode, cardNumber, phoneNumber, email } = req.body;
   
     if (!name || !lastName|| !country || !city || !region || !postalCode ||!cardNumber || !phoneNumber || !email) {
