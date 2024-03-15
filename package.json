@@ -21,6 +21,7 @@
         "react-transition-group": "^4.4.5",
         "redux": "^4.2.1",
         "redux-thunk": "^2.4.2",
+        "sass": "^1.72.0",
         "stripe": "^14.18.0",
         "swiper": "7.2",
         "thunk": "^0.0.1"
